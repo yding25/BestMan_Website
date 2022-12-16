@@ -158,39 +158,38 @@
                         <hr>
                     </div>
                     <div class="document">
-                        <div class="section" id="Segbot_UR5_with_2F_Gripper-Installation">
-                            <h2>Installation</h2>
-                            <p>You can either download one of the pre-built binaries or build the source code manually.</p>
-                            <div class="highlight-default notranslate">
-                                <div class="highlight">
-                                    <pre>sudo apt-get install libatlas-base-dev libsuitesparse-dev
-git clone https://ceres-solver.googlesource.com/ceres-solver
-cd ceres-solver
-git checkout $(git describe --tags) # Checkout the latest release
-mkdir build
-cd build
-cmake .. -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF
-make -j
-sudo make install</pre>
-                                </div>
-                            </div>
+                        <div class="section" id="SDF_URDF_Model-SDF_Generator">
+                            <h2>SDF_Generator</h2>
+                            <p> Project <i>SDF_Generator</i> is for generating 3D object models (*sdf) in Gazebo with taking *.obj or *.dae files as input.
+                                <br>
+                                🔥Please refer to project link <a href="https://github.com/yding25/SDF_Generator">SDF_Generator</a>. </p>
                         </div>
-                        <div class="section" id="Segbot_UR5_with_2F_Gripper-Usage">
-                            <h2>Usage</h2>
-                            <p>You can either download one of the pre-built binaries or build the source code manually.</p>
+                        <br />
+                        <div class="section" id="SDF_URDF_Model-SDF_Models">
+                            <h2>SDF_Models</h2>
+                            <p> Project <i>SDF_Models</i> is a collection of SDF models for Gazebo. This repo is continually updated!
+                                <br>
+                                🔥Please refer to project link <a href="https://github.com/yding25/SDF_models">SDF_Models</a>. </p>
+                        </div>
+                        <br />
+                        <div class="section" id="SDF_URDF_Model-URDF_Models">
+                            <h2>URDF_Models</h2>
+                            <p> Project <i>URDF_Models</i> is a collection of URDF models for Pybullet. This repo is continually updated!
+                                <br>
+                                🔥Please refer to project link <a href="https://github.com/yding25/URDF_models">URDF_Models</a>. </p>
                         </div>
                     </div>
 
                     <footer>
                         <div class="rst-footer-buttons">
-
-                            <a href="Segbot_UR5_with_2F_Gripper.html" class="btn btn-neutral float-left" title="BestMan" accesskey="p" rel="prev">
+                            <a href="Kuka_with_Sucker.html" class="btn btn-neutral float-left" title="BestMan" accesskey="p" rel="prev">
                                 <span class="fa fa-arrow-circle-left" aria-hidden="true"></span>&nbsp;Previous
                             </a>
-
-                            <a href="UR5_with_Object_Segmentation.html" class="btn btn-neutral float-right" title="Tutorial" accesskey="n" rel="next">&nbsp;next
+                            <!--
+                            <a href="javascript:;" class="btn btn-neutral float-right" title="Tutorial" accesskey="n" rel="next">&nbsp;next
                                 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span>
                             </a>
+-->
                         </div>
                         <hr>
                         <div>© Copyright 2022, Yan Ding</div>

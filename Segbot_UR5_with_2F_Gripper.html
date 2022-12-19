@@ -20,7 +20,7 @@
             <div class="wy-side-scroll">
                 <div class="wy-side-nav-search">
                     <a href="index.html" class="icon icon-home">&nbsp;BestMan</a>
-                    <div class="version">0.0</div>
+                    <div class="version">0.1</div>
                     <div role="search">
                         <form id="rtd-search-form" class="wy-form" action="#" method="get">
                             <input type="text" name="q" placeholder="Search docs">
@@ -36,7 +36,7 @@
                             <!-- drop-down list -->
                             <ul>
                                 <li class="toctree-l2">
-                                    <a class="reference internal" href="#Segbot_UR5_with_2F_Gripper-Installation">Installation</a>
+                                    <a class="reference internal" href="#Segbot_UR5_with_2F_Gripper-Preparation">Installation</a>
                                 </li>
                                 <li class="toctree-l2">
                                     <a class="reference internal" href="#Segbot_UR5_with_2F_Gripper-Usage">Usage</a>
@@ -158,26 +158,26 @@
                         <hr>
                     </div>
                     <div class="document">
-                        <div class="section" id="Segbot_UR5_with_2F_Gripper-Installation">
-                            <h2>Installation</h2>
-                            <p>You can either download one of the pre-built binaries or build the source code manually.</p>
-                            <div class="highlight-default notranslate">
-                                <div class="highlight">
-                                    <pre>sudo apt-get install libatlas-base-dev libsuitesparse-dev
-git clone https://ceres-solver.googlesource.com/ceres-solver
-cd ceres-solver
-git checkout $(git describe --tags) # Checkout the latest release
-mkdir build
-cd build
-cmake .. -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF
-make -j
-sudo make install</pre>
-                                </div>
-                            </div>
+                        <div class="section" id="Segbot_UR5_with_2F_Gripper-Preparation">
+                            <p>
+                                BestMan robot consists of a mobile base (i.e., SegBot) and an arm (i.e., UR5e), which is with a few basic capabilities, such as <i>navigation</i> and <i>pick-place</i>.
+                            </p>
+                            <img src="https://raw.githubusercontent.com/yding25/pic_share/master/segbot_ur5.png" height="250" width="300" />
                         </div>
-                        <div class="section" id="Segbot_UR5_with_2F_Gripper-Usage">
-                            <h2>Usage</h2>
-                            <p>You can either download one of the pre-built binaries or build the source code manually.</p>
+
+                        <div class="section" id="Segbot_UR5_with_2F_Gripper-Preparation">
+                            <h2>Preparation</h2>
+                            <p>Here, we introduce the gazebo-based simulation configuration.
+                                <br />
+                                🔥Please refer to link <a href="https://github.com/yding25/Segbot-UR5-with-2F-Gripper/blob/main/Preparation.md">Preparation</a>.
+                            </p>
+                        </div>
+
+                        <div class="section" id="Segbot_UR5_with_2F_Gripper-APIs">
+                            <h2>APIs</h2>
+                            <p>
+                               Here, we introduce a few important APIS.
+                            </p>
                         </div>
                     </div>
 

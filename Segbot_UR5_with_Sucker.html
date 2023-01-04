@@ -137,7 +137,7 @@
                                 </li>
                             </ul>
                         </li>
-                        
+
                         <li class="toctree-l1">
                             <a class="reference internal" href="Customized_Tools_Applications.html">Customized Tools/Applications</a>
                             <!-- drop-down list -->
@@ -171,26 +171,31 @@
                         <hr>
                     </div>
                     <div class="document">
-                        <div class="section" id="Segbot_UR5_with_2F_Gripper-Installation">
-                            <h2>Installation</h2>
-                            <p>You can either download one of the pre-built binaries or build the source code manually.</p>
-                            <div class="highlight-default notranslate">
-                                <div class="highlight">
-                                    <pre>sudo apt-get install libatlas-base-dev libsuitesparse-dev
-git clone https://ceres-solver.googlesource.com/ceres-solver
-cd ceres-solver
-git checkout $(git describe --tags) # Checkout the latest release
-mkdir build
-cd build
-cmake .. -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF
-make -j
-sudo make install</pre>
-                                </div>
+                        <div class="section">
+                            <p>
+                                BestMan robot consists of a mobile base (i.e., SegBot) and an arm (i.e., UR5e), which is with a few basic capabilities, such as <i>navigation</i> and <i>pick-place</i>.
+                            </p>
+                            <!-- <img src="https://raw.githubusercontent.com/yding25/pic_share/master/segbot_ur5.png" height="250" width="300" />-->
+                            <div class="align-center figure align-default">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/lp9q1yNAF3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
+                            <br />
                         </div>
-                        <div class="section" id="Segbot_UR5_with_2F_Gripper-Usage">
-                            <h2>Usage</h2>
-                            <p>You can either download one of the pre-built binaries or build the source code manually.</p>
+
+                        <div class="section" id="Segbot_UR5_with_Sucker-Preparation">
+                            <h2>Preparation</h2>
+                            <p>Here, we introduce how to configure gazebo-based simulation environment.
+                                <br />
+                                🔥Please refer to the Markdown file <a href="https://github.com/yding25/Segbot-UR5-with-Sucker/blob/main/Preparation.md">Preparation.md</a>.
+                            </p>
+                        </div>
+
+                        <div class="section" id="Segbot_UR5_with_Sucker-APIs">
+                            <h2>APIs</h2>
+                            <p> Here, we introduce a few important APIS, such as <i>grasp and ungrasp object</i>, and <i>create map</i>.
+                                <br />
+                                🔥Please refer to the Markdown file <a href="https://github.com/yding25/Segbot-UR5-with-Sucker/blob/main/APIs.md">APIs.md</a>.
+                            </p>
                         </div>
                     </div>
 
@@ -218,6 +223,9 @@ sudo make install</pre>
         jQuery(function() {
             SphinxRtdTheme.Navigation.enable(true);
         });
+
     </script>
 
-</body></html>
+</body>
+
+</html>

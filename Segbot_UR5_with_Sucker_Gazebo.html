@@ -10,8 +10,6 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/theme.js"></script>
     <script src="./js/underscore.js"></script>
-    <!-- Include jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body class="wy-body-for-nav">
@@ -43,34 +41,30 @@
                     </div>
                     <div class="document">
                         <div class="section">
-                            <h1>BestMan Project</h1>
+                            <p>
+                                BestMan robot consists of a mobile base (i.e., SegBot) and an arm (i.e., UR5e), which is with a few basic capabilities, such as <i>navigation</i> and <i>pick-place</i>.
+                            </p>
+                            <!-- <img src="https://raw.githubusercontent.com/yding25/pic_share/master/segbot_ur5.png" height="250" width="300" />-->
                             <div class="align-center figure align-default">
-                                <img src="https://raw.githubusercontent.com/yding25/pic_share/master/bestman.jpg" height="400" />
-                                <p class="caption"><i>A photo of our BestMan robot, which was took on Halloween (2022).</i></p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/lp9q1yNAF3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
+                            <br />
                         </div>
-                        <div class="section">
-                            <h2>About</h2>
-                            <p>BestMan project provides a collection of APIs used for a mobile manipulator, which consists of <a href="http://wiki.ros.org/segbot">Segbot</a> and <a href="http://wiki.ros.org/action/show/universal_robots?action=show&redirect=universal_robot">UR5e</a> in different environments (Gazebo/Pybullet/Real). If you use this project for your research, please cite:</p>
-                            <div class="highlight-default notranslate">
-                                <div class="highlight">
-                                    <pre>@article{ding2023integrating,
-  title={Integrating Action Knowledge and LLMs for Task Planning and Situation Handling in Open Worlds},
-  author={Ding, Yan and Zhang, Xiaohan and Amiri, Saeid and Cao, Nieqing and Yang, Hao and Kaminski, Andy and Esselink, Chad and Zhang, Shiqi},
-  journal={arXiv preprint arXiv:2305.17590},
-  year={2023}
-}
 
-@article{ding2023task,
-  title={Task and motion planning with large language models for object rearrangement},
-  author={Ding, Yan and Zhang, Xiaohan and Paxton, Chris and Zhang, Shiqi},
-  journal={arXiv preprint arXiv:2303.06247},
-  year={2023}
-}
-</pre>
-                                </div>
-                            </div>
+                        <div class="section" id="Segbot_UR5_with_Sucker-Preparation">
+                            <h2>Preparation</h2>
+                            <p>Here, we introduce how to configure gazebo-based simulation environment.
+                                <br />
+                                🔥Please refer to the Markdown file <a href="https://github.com/yding25/BestMan_Gazebo/blob/master/Segbot-UR5-with-Sucker/Preparation.md">Preparation.md</a>.
+                            </p>
+                        </div>
 
+                        <div class="section" id="Segbot_UR5_with_Sucker-APIs">
+                            <h2>APIs</h2>
+                            <p> Here, we introduce a few important APIS, such as <i>grasp and ungrasp object</i>, and <i>create map</i>.
+                                <br />
+                                🔥Please refer to the Markdown file <a href="https://github.com/yding25/BestMan_Gazebo/blob/master/Segbot-UR5-with-Sucker/APIs.md">APIs.md</a>.
+                            </p>
                         </div>
                     </div>
 

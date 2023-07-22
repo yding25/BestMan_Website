@@ -16,145 +16,14 @@
     <div class="wy-grid-for-nav">
 
         <!-- left content -->
-        <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-            <div class="wy-side-scroll">
-                <div class="wy-side-nav-search">
-                    <a href="index.html" class="icon icon-home">&nbsp;BestMan</a>
-                    <div class="version">0.1</div>
-                    <div role="search">
-                        <form id="rtd-search-form" class="wy-form" action="#" method="get">
-                            <input type="text" name="q" placeholder="Search docs">
-                            <input type="hidden" name="check_keywords" value="yes">
-                            <input type="hidden" name="area" value="default">
-                        </form>
-                    </div>
-                </div>
-                <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-                    <ul class="current">
-                        <li class="toctree-l1">
-                            <a class="reference internal" href="Segbot_UR5_with_2F_Gripper.html">Segbot &amp; UR5 with 2F Gripper</a>
-                            <!-- drop-down list -->
-                            <ul>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#Segbot_UR5_with_2F_Gripper-Installation">Installation</a>
-                                </li>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#Segbot_UR5_with_2F_Gripper-Usage">Usage</a>
-                                </li>
-                            </ul>
-                        </li>
+        <!-- This part is shared by all pages -->
+        <div id="nav-placeholder"></div>
+        <script>
+            $(document).ready(function() {
+                $("#nav-placeholder").load("navi.html");
+            });
 
-                        <li class="toctree-l1">
-                            <a class="reference internal" href="Segbot_UR5_with_Sucker.html">Segbot &amp; UR5 with Sucker</a>
-                            <!-- drop-down list -->
-                            <ul>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#Segbot_UR5_with_Sucker-Installation">Installation</a>
-                                </li>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#Segbot_UR5_with_Sucker-Usage">Usage</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="toctree-l1">
-                            <a class="reference internal" href="UR5_with_Object_Segmentation.html">UR5 with Object Segmentation</a>
-                            <!-- drop-down list -->
-                            <ul>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#UR5_with_Object_Segmentation-Installation">Installation</a>
-                                </li>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#UR5_with_Object_Segmentation-Usage">Usage</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="toctree-l1">
-                            <a class="reference internal" href="UR5_with_Object_Identification.html">UR5 with Object Identification</a>
-                            <!-- drop-down list -->
-                            <ul>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#UR5_with_Object_Identification-Installation">Installation</a>
-                                </li>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#UR5_with_Object_Identification-Usage">Usage</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="toctree-l1">
-                            <a class="reference internal" href="UR5_with_3D_Reconstruction.html">UR5 with 3D Reconstruction</a>
-                            <!-- drop-down list -->
-                            <ul>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#UR5_with_3D_Reconstruction-Installation">Installation</a>
-                                </li>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#UR5_with_3D_Reconstruction-Usage">Usage</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="toctree-l1">
-                            <a class="reference internal" href="Multiple_UR5.html">Multiple UR5</a>
-                            <!-- drop-down list -->
-                            <ul>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#Multiple_UR5-Installation">Installation</a>
-                                </li>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#Multiple_UR5-Usage">Usage</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="toctree-l1">
-                            <a class="reference internal" href="Kuka_with_Sucker.html">Kuka with Sucker</a>
-                            <!-- drop-down list -->
-                            <ul>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#Kuka_with_Sucker-Installation">Installation</a>
-                                </li>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#Kuka_with_Sucker-Usage">Usage</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="toctree-l1">
-                            <a class="reference internal" href="SDF_URDF_Model.html">SDF/URDF Model</a>
-                            <!-- drop-down list -->
-                            <ul>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#SDF_URDF_Model-SDF_Generator">SDF_Generator</a>
-                                </li>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#SDF_URDF_Model-SDF_Models">SDF_Models</a>
-                                </li>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#SDF_URDF_Model-URDF_Models">URDF_Models</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="toctree-l1">
-                            <a class="reference internal" href="Customized_Tools_Applications.html">Customized Tools/Applications</a>
-                            <!-- drop-down list -->
-                            <ul>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#Customized_Tools_Applications-Preparation">Preparation</a>
-                                </li>
-                                <li class="toctree-l2">
-                                    <a class="reference internal" href="#Customized_Tools_Applications-Usage">Usage</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </script>
 
         <!-- right content -->
         <section class="wy-nav-content-wrap">
@@ -205,16 +74,6 @@
                     </div>
 
                     <footer>
-                        <div class="rst-footer-buttons">
-                            <a href="Kuka_with_Sucker.html" class="btn btn-neutral float-left" title="BestMan" accesskey="p" rel="prev">
-                                <span class="fa fa-arrow-circle-left" aria-hidden="true"></span>&nbsp;Previous
-                            </a>
-
-                            <a href="Customized_Tools_Applications.html" class="btn btn-neutral float-right" title="Tutorial" accesskey="n" rel="next">&nbsp;next
-                                <span class="fa fa-arrow-circle-right" aria-hidden="true"></span>
-                            </a>
-
-                        </div>
                         <hr>
                         <div>© Copyright 2022, Yan Ding</div>
                     </footer>

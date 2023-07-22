@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestMan</title>
+    <link rel="stylesheet" href="./css/theme.css" type="text/css">
+    <link rel="stylesheet" href="./css/pygments.css" type="text/css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/underscore.js"></script>
+</head>
+
+<body class="wy-body-for-nav">
+    <div class="wy-grid-for-nav">
+
+        <!-- left content -->
+        <!-- This part is shared by all pages -->
+        <div id="nav-placeholder"></div>
+        <script>
+            $(document).ready(function() {
+                $("#nav-placeholder").load("navi.html");
+            });
+
+        </script>
+
+        <!-- right content -->
+        <section class="wy-nav-content-wrap">
+            <nav class="wy-nav-top"></nav>
+            <div class="wy-nav-content">
+                <div class="rst-content">
+                    <div>
+                        <ul class="wy-breadcrumbs">
+                            <li><a class="icon icon-home"></a>»</li>
+                            <a class="reference internal" href="index.html">
+                                <li>BestMan</li>
+                            </a>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="document">
+                        <div class="section">
+                            <p>
+                                BestMan robot consists of a mobile base (i.e., SegBot) and an arm (i.e., UR5e), which is with a few basic capabilities, such as <i>navigation</i> and <i>pick-place</i>.
+                            </p>
+                            <!-- <img src="https://raw.githubusercontent.com/yding25/pic_share/master/segbot_ur5.png" height="250" width="300" />-->
+                            <div class="align-center figure align-default">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/UNu7zvfHeMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <br />
+                        </div>
+
+                        <div class="section" id="Segbot_UR5_with_2F_Gripper-Preparation">
+                            <h2>Preparation &amp; APIs </h2>
+                            <p>Here, we introduce how to set up our real robot and a few foundamental APIs.
+                                <br />
+                                🔥Please refer to the project <a href="https://github.com/yding25/BestMan_Real">BestMan_Real</a>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <hr>
+                        <div>© Copyright 2022, Yan Ding</div>
+                    </footer>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        jQuery(function() {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+
+    </script>
+
+</body>
+
+</html>
